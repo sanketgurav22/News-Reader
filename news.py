@@ -8,7 +8,7 @@ def speak(str):
 
 if __name__=='__main__':
     speak("News for Today")
-    url="https://newsapi.org/v2/top-headlines?country=in&apiKey=c9f8e0ff652b4dc48d16f32abf4ae07e"
+    url="put here news api"
     news=requests.get(url).text
     news_dict=json.loads(news)
     arts=news_dict['articles']
